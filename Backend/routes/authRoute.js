@@ -1,12 +1,11 @@
 const express = require('express')
 const router = express.Router();
-const { userSignup,userSignin, verifyUser,verifyMailid,fpoSignup } = require('../controllers/authController')
+const { userSignup,userSignin,fpoSignup,fpoSignin } = require('../controllers/authController')
 
 router.post('/signup',userSignup)
 router.post('/fposignup',fpoSignup)
 router.post('/signin',userSignin)
-//router.post('/verify',verifyUser)
-//router.get('/verifyemail/:token',verifyMailid)
+router.post('/fposignin',fpoSignin)
 
 
 module.exports = router;
