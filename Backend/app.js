@@ -68,8 +68,8 @@ function verifyToken(req,res,next)
 const auth = require('./routes/authRoute');
 app.use('/api/auth',auth)
 
-const account = require('./routes/accountRoute')
-app.use('/api/account',verifyToken,account)
+const browse = require('./routes/browseRoutes');
+app.use('./api/browse',browse)
 
 app.get('/user/data',verifyToken,(req,res)=>{
     res.send('yoooooo')

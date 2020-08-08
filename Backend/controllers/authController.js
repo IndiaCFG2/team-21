@@ -9,6 +9,10 @@ const User = require('../db/models/userModel')
 
 const { sendVerificationMail } = require('../service/emailService')
 
+//vibhav
+
+//remove email 
+//otp verification in v2
 module.exports.userSignup = async (req, res) => {
     console.log(req.body)
     const { email, name, password, phone } = req.body
@@ -90,6 +94,11 @@ module.exports.userSignup = async (req, res) => {
             })
         }
     })
+
+}
+
+//
+module.exports.fpoSignup = async (req,res) =>{
 
 }
 
