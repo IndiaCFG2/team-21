@@ -1,0 +1,44 @@
+<div>
+
+    <div>
+        <h6> Ask a query. </h6>
+        <div class="row">
+            <div class="col-md-4">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="questions here.."></textarea>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-warning" >Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div *ngFor="let q of queries;let idx = index">
+        <div class="single">
+            <div class="question" (click)="openquestion(idx)">
+                <h5> {{q.question}} </h5>
+            </div>
+            <div class="answer" *ngIf="q.open">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempore ipsam nobis hic voluptatum maiores id neque quibusdam sequi delectus error accusantium iusto officiis, quam porro sint. Est, dolorem ea.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque hic quasi eos incidunt perspiciatis illo eligendi perferendis, nisi natus excepturi ipsam dolorem labore, asperiores unde quaerat error laborum culpa quia!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptatum! Ratione soluta ducimus libero similique, alias suscipit facilis cupiditate odit quibusdam, molestias quaerat laudantium, ab autem animi eum pariatur doloribus!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere, consectetur enim sed aperiam mollitia quas nulla, pariatur vel rerum dolorum ipsam distinctio, consequuntur accusantium sint deleniti. Provident, tempora esse.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam natus, voluptatem ad adipisci nihil aspernatur, alias beatae commodi placeat, cupiditate ex pariatur itaque fugiat aut molestias fuga facere blanditiis.
+                </p>
+                <br>
+                <div>
+                    <h5>
+                        Was this helpful?
+                    </h5>
+                    <div>
+                        <button class="btn btn-primary mr-3"> Yes </button>
+                        <button class="btn btn-danger "> No </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

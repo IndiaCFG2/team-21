@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="d-flex">
+        <div class="pr-3">
+            <h5> Select  Language(s) :</h5>
+        </div>
+        <div>
+            <label for="">Engish</label>
+            <input class="m-1"
+  type="checkbox"
+  [(ngModel)]="english"
+  [ngModelOptions]="{standalone: true}"/> `
+        </div>
+        <div class="pl-3">
+            <label for="">Hindi</label>
+            <input class="m-1"
+  type="checkbox"
+  [(ngModel)]="hindi"
+  [ngModelOptions]="{standalone: true}"/> `
+        </div>
+    </div>
+
+    
+
+    <hr>
+
+       <div *ngIf="source=='video'" >
+            <app-video [lang]="getlang()" ></app-video>
+       </div> 
+       <div *ngIf="source=='article'" >
+        <app-article [lang]="getlang()" ></app-article>
+    </div> 
+    <div *ngIf="source=='query'" >
+        <app-query [lang]="getlang()" ></app-query>
+    </div> 
+</div>

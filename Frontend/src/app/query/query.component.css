@@ -1,0 +1,14 @@
+.single{
+    width: 100%;
+    border: 1px rgb(212, 212, 212) solid;
+    margin: 3px;
+    cursor: pointer;
+}
+.question{
+    background-color: rgb(240, 240, 240);
+    padding: 7px 20px;
+}
+.answer{
+    padding: 7px 20px;
+    transition-duration: .5s;
+}

@@ -1,0 +1,9 @@
+<br>
+<div class="d-flex">
+    <div *ngFor="let art of articles" class="p-2" >
+        <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" (click)="countClicks(art.id)" target="_blank">
+            <img src="{{art.img}}" alt="" height="200">
+        </a>
+    </div>
+        
+</div>

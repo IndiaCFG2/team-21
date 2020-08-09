@@ -1,6 +1,6 @@
 const mongo = require('mongoose')
 
-const ytLink = mongo.Schema({
+const article = mongo.Schema({
     name :{
         type:String,
         required:true
@@ -12,6 +12,11 @@ const ytLink = mongo.Schema({
     description:{
         type:String
     },
+    photo:{
+        type:String,
+        required:true
+    }
+    ,
     yes:{
         type:Number,
         default:0
@@ -19,7 +24,11 @@ const ytLink = mongo.Schema({
     no:{
         type:Number,
         default:0
+    },
+    language:{
+        type:String
     }
+    
 })
 
-module.exports = mongo.model('ytLink',ytLink);
+module.exports = mongo.model('article',article);

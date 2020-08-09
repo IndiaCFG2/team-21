@@ -1,0 +1,88 @@
+<div  >
+    <div class="d-flex">
+        <h4>  Offers </h4>
+        <div class="flex-fill" ></div>
+    </div>
+</div>
+
+<div class="sellform"  *ngIf="false" >
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="sel1">Select list:*</label>
+  <select class="form-control" id="sel1">
+    <option>rice</option>
+    <option>wheat</option>
+    <option>barley</option>
+    <option>apple</option>
+    <option>millet</option>
+    <option>banana</option>
+
+
+  </select>
+              </div>
+              <div class="form-group">
+                <label >Quantity (kg):*</label>
+                <input type="text" class="form-control" >
+              </div>
+              <div class="form-group">
+                <label >Avalability(on or before):*</label>
+                <input type="date" class="form-control" >
+              </div>
+              <button class="btn btn-info">Submit </button>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class=" offer p-3 m-2">
+    <div class="d-flex align-self-center">
+        <div >
+            <h5> Myproduct_1,Region1 </h5>
+        </div>
+        <div class="flex-fill" ></div>
+        <div>
+            <input type="text" class="form-control" placeholder="amount/-" >
+        </div>
+        <div>
+            <button class="btn btn-warning mr-4 " > Bid </button>
+        </div>
+        <div>
+            <h6>No of Biddings - 
+                <span class="p-1" style="background-color: rgb(47, 117, 197); color: wheat;border-radius: 19px;"> 12 </span>
+            </h6>
+            
+        </div>
+    </div>
+    <div   class="biddings" >
+        <div *ngFor="let bid of biddings" class="box">
+            <div class="d-flex m-1 bid p-1">
+                <div>
+                    <h5>{{bid.name}} - {{bid.price}}</h5>
+                </div>
+                <div class="flex-fill">
+                </div>
+                <div class="mr-4">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex offer p-3 m-2">
+    <div >
+        <h5> Myproduct_2 </h5>
+    </div>
+    <div class="flex-fill" ></div>
+    <div class="pr-4">
+        <h6> 
+            <span class="activeOffer p-1" *ngIf="false"> Active </span>
+            <span class="inactiveOffer p-1" *ngIf="true"> Closed </span>
+        </h6>
+    </div>
+    <div>
+        <h6>No of Biddings - 
+            <span class="p-1" style="background-color: rgb(47, 117, 197); color: wheat;border-radius: 19px;"> 8 </span>
+        </h6>
+    </div>
+</div>

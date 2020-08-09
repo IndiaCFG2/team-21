@@ -1,0 +1,25 @@
+.activeOffer{
+    background-color: rgb(57, 238, 57);
+    
+}
+.inactiveOffer{
+    background-color: rgba(216, 68, 42, 0.993);
+    color: white;
+}
+
+.offer{
+    background-color: rgba(172, 255, 47, 0.507);
+    cursor: pointer;
+}
+
+.biddings
+{
+    padding-top: 12px;
+    max-height: 40vh;
+    overflow-y: scroll;
+    background-color: rgba(172, 255, 47, 0.507);;
+}
+
+.bid{
+    background-color: white;
+}
