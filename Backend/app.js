@@ -15,6 +15,7 @@ app.use(bodyparser.urlencoded({extended:true}))
 
 
 const User = require('./db/models/userModel')
+const FpoUser = require('./db/models/fpoModel')
 
 require('dotenv').config();
 

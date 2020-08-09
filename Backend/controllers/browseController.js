@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 const ytlink = require('../db/models/youtubeLinkModel')
 const article = require('../db/models/articleModel')
 const query = require('../db/models/queryModel')
+=======
+const ylink = require('../db/models/youtubeLinkModel')
+const alink = require('../db/models/articleLinkModel')
+const qlink = require('../db/models/queriesModel')
+const aqlink = require('../db/models/askQueryModel')
+>>>>>>> db7605c31372d19963a78b718f6c6c660ec84330
 
 
 module.exports.getYoutubeLinks = async(req,res)=>{
